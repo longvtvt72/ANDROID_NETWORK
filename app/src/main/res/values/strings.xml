@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">LONGDPS13890</string>
+
+    <!-- String resources related to log in -->
+    <string name="sign_in_title">Đăng nhập</string>
+    <string name="email_prompt">Địa chỉ email</string>
+    <string name="password_prompt">Mật khẩu</string>
+    <string name="forgot_password_title">Không thể đăng nhập? <font color='#ff1744'>Quên mật khẩu?</font></string>
+    <string name="sign_up_link"> <font color='#000000'>Chưa có tài khoản?</font><font color='#ff1744'> Tạo ngay</font></string>
+
+    <!-- String resources related to sign up -->
+    <string name="sign_up_title">Tạo tài khoản</string>
+    <string name="create_account_title">Tạo tài khoản của bạn</string>
+
+    <string name="first_name_prompt">Họ và tên đệm</string>
+    <string name="last_name_prompt">Tên</string>
+    <string name="email_address_prompt">Địa chỉ email</string>
+    <string name="id_number_prompt">ID của bạn</string>
+    <string name="phone_number_prompt">Số điện thoại</string>
+    <string name="confirm_password_prompt">Xác nhận mật khẩu</string>
+
+    <!-- String resources related to menus -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="notifications_title">Thông báo</string>
+    <string name="sua_title">Sửa</string>
+    <string name="xoa_title">Xóa</string>
+
+
+    <!-- Machine IP Address -->
+    <string name="machine_ip_address">192.168.1.40:8088</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="next">Tiếp</string>
+    <string name="previous">Quay lại</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="forgot">Quên mật khẩu</string>
+    <string name="dmk">Đổi mật khẩu</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedProductsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:titleTextColor="@color/black"
+            app:title="Chi tiết" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_max"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SecondaryTextTheme"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BoldTitleTextTheme"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SecondaryTextTheme"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="Cấu hình chi tiết "
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="iPhone được trang bị cấu hình cực kỳ mạnh, bao gồm:\n\n
+            CPU: Apple Bionic A13.\n
+            RAM: 4 GB.\n
+            ROM: 64 GB.\n
+            Hệ điều hành: iOS 13.5.1.\n
+            \niPhone mượt mà là điều không thể chối cãi được và iPhone 11 cũng vậy. Khi nhận máy, iPhone 11 của mình còn ở phiên bản 13.4.1, mình có trải nghiệm sơ bộ thì máy rất mượt mà. Sau khi cập nhật lên iOS 13.5.1 (dung lượng cũng đâu đó 48 MB), thì hiệu năng vẫn không thay đổi. Tất nhiên là mọi ứng dụng phổ biến nhất như Facebook, Chrome và những ứng dụng hệ thống khác không thể làm khó máy rồi.
+            \n\n iPhone 11 cũng cho khả năng chơi game mượt mà vô cùng. Qua 3 tựa game như Liên Quân Mobile, Free Fire, Call of Duty Mobile thì iPhone 11 đều có bật mức chất lượng hình ảnh cao nhất (chất lượng HD trên Liên Quân) và tốc độ khung hình cao nhất.
+
+            Với Liên Quân Mobile, iPhone 11 cho khả năng giữ FPS ổn định từ đầu đến cuối trận. Tốc độ khung hình rơi vào khoảng 59 - 60 FPS, nhưng ổn định ở 60 FPS nhiều hơn, lâu lâu mới giảm xuống 59 FPS.
+
+            "/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+
+ <com.google.android.material.appbar.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/settings_toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?actionBarSize"
+         app:titleTextColor="@color/black"
+         app:title="Cài đặt"/>
+
+ </com.google.android.material.appbar.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="THÔNG TIN TÀI KHOẢN"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="ID number :"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtHo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Họ :"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Tên :"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Email :"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Số điện thoại :"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <Button
+        android:id="@+id/doimatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Đổi mật khẩu"
+        android:background="@color/grey"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/taotaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doimatkhau"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Tạo tài khoản mới"
+        android:background="@color/grey"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/dangxuat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taotaikhoan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Đăng xuất"
+        android:background="@color/grey"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

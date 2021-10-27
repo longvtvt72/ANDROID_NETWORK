@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asm_android_network">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ASM_ANDROID_NETWORK"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UpdateProductActivity"></activity>
+        <activity
+            android:name=".AddProductActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".DetailedProductsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
